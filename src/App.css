@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: black;
+    overflow-x: hidden;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    width: 90%;
+    height: 100px;
+    z-index: 100;
+    border-bottom: 1px solid #b9b4b0;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand, .home, .shop {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.brand {
+    font-size: 50px;
+    margin: 0 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home, .shop {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.home, .shop {
+    margin-top: 2px;
+}
+
+.mobile-brand {
+    display: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: 150px 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+article h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+article .quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    width: 80%;
+}
+
+video {
+    min-width: 100%;    
+}
+
+hr {
+    margin: 20px 0;
+    border-top: 0.5px solid rgba(185, 180, 176, 0.5);
+    border-bottom: none;
+}
+
+
+@media all and (max-width: 1030px) {
+    .brand {
+        margin: 0 40px;
+    }
+}
+
+@media all and (max-width: 899px) {
+    nav {
+        height: 80px;
+    }
+
+    .mobile-brand {
+        display: block;
+        font-size: 40px;
+    }
+
+    .video {
+        width: 90%;
+    }
+
+    article {
+        font-size: 19px;
+    }
+    
+    article h4 {
+        font-size: 27px;
+    }
+    
+    article .quote {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    article {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 899px) {
+    .mobile-brand {
+        font-size: 35px;
+    }
+
+    article {
+        font-size: 16px;
+    }
+    
+    article h4 {
+        font-size: 22px;
+    }
+    
+    article .quote {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    nav {
+        height: 60px;
+    }
+
+    .mobile-brand {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    article {
+        margin: 120px 0 90px 0;
+    }
+    
+    article h4 {
+        font-size: 19px;
+    }
 }

@@ -1,0 +1,12 @@
+.cart {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.close_btn, .cart {
+    cursor: pointer;
+}
