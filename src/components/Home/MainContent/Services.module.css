@@ -9,6 +9,8 @@
     margin: 50px 0;
     color: white;
     font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* ефект рамки */
