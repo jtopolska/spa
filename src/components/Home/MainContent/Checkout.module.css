@@ -1,0 +1,60 @@
+
+.cart, .cellColor {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 14px;
+    letter-spacing: 3px !important;
+    height: 50px;
+    color: white !important;
+    text-decoration: none;
+    padding-bottom: 0 !important;
+}
+
+.checkoutBtn {
+    margin-left: 10%;
+    width: 80%;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(185, 180, 176, .3);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.checkoutBtn:hover {
+    cursor: pointer;
+    border: 1px solid rgba(185, 180, 176, .7);
+}
+
+.empty {
+    margin-bottom: 80vh;
+}
+
+.full {
+    margin-bottom: 50vh;
+}
+
+@media all and (max-height: 1420px) {
+    .empty {
+        margin-bottom: 70vh;
+    }
+}
+
+@media all and (max-height: 1150px) {
+    .full {
+        margin-bottom: 40vh;
+    }
+}
+
+@media all and (max-height: 1050px) {
+    .empty {
+        margin-bottom: 60vh;
+    }
+}
+
+@media all and (max-height: 990px) {
+    .full {
+        margin-bottom: 30vh;
+    }
+}

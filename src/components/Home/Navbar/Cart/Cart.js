@@ -4,6 +4,7 @@ import { CloseRounded } from '@mui/icons-material';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCartIsOpen, showCart } from '../../../redux/cartOpenSlice';
 import { getCartItems, getTotalCost, clearAll, getCost } from '../../../redux/cartSlice';
+import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 import cls from './Cart.module.css';
 
@@ -48,7 +49,7 @@ const Cart = () => {
                 })}
                 </ListItem>
             </List>
-            <Divider sx={{ borderColor: '#b9b4b0' }}/>
+            <Divider sx={{ borderColor: 'rgba(185, 180, 176, .6)' }}/>
             <Box sx={{ backgroundColor: 'black', px: 1.5, pt: 4, fontFamily: `'Josefin Sans', sans-serif`, letterSpacing: '3px' }}>
                 { cost === 0 ? 'CART IS EMPTY' : `TOTAL: $${ cost }`}
             </Box>
@@ -56,6 +57,9 @@ const Cart = () => {
                 sx={{ backgroundColor: 'black', px: 1.5, py: 3, fontFamily: `'Cormorant Garamond', serif`, fontStyle: 'italic', cursor: 'pointer' }}
             >{ cost === 0 ? '' : 'Clear cart' }
             </Box>
+            <Link to='/checkout' className={ cls.checkout } onClick={handleDrawerClose} >
+                <button className={ cls.checkoutBtn }>Proceed to checkout</button>
+            </Link>
         </Box>
     );
 
